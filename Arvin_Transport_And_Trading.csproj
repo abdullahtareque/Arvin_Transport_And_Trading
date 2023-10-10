@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B239BC6F-60C4-4874-BDA2-BD9761135990}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Arvin_Transport_And_Trading</RootNamespace>
+    <AssemblyName>Arvin_Transport_And_Trading</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArvinTransportDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArvinTransportDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArvinTransportDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArvinTransportDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArvinTransportDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArvinTransportDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArvinTransportDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArvinTransportDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArvinTransportDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArvinTransportDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArvinTransportDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArvinTransportDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArvinTransportDBDataSet61.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArvinTransportDBDataSet61.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArvinTransportDBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArvinTransportDBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArvinTransportDBDataSet81.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArvinTransportDBDataSet81.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCar.Designer.cs">
+      <DependentUpon>FormCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCustomer.Designer.cs">
+      <DependentUpon>FormCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDashBoard.Designer.cs">
+      <DependentUpon>FormDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRental.Designer.cs">
+      <DependentUpon>FormRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReturn.Designer.cs">
+      <DependentUpon>FormReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUsers.Designer.cs">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\pictureBox.cs" />
+    <Compile Include="FromLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromLogin.Designer.cs">
+      <DependentUpon>FromLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCar.resx">
+      <DependentUpon>FormCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCustomer.resx">
+      <DependentUpon>FormCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormDashBoard.resx">
+      <DependentUpon>FormDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormRental.resx">
+      <DependentUpon>FormRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormReturn.resx">
+      <DependentUpon>FormReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUsers.resx">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromLogin.resx">
+      <DependentUpon>FromLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ArvinTransportDBDataSet.xsc">
+      <DependentUpon>ArvinTransportDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArvinTransportDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArvinTransportDBDataSet.xss">
+      <DependentUpon>ArvinTransportDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet1.xsc">
+      <DependentUpon>ArvinTransportDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArvinTransportDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArvinTransportDBDataSet1.xss">
+      <DependentUpon>ArvinTransportDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet2.xsc">
+      <DependentUpon>ArvinTransportDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArvinTransportDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArvinTransportDBDataSet2.xss">
+      <DependentUpon>ArvinTransportDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet3.xsc">
+      <DependentUpon>ArvinTransportDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArvinTransportDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArvinTransportDBDataSet3.xss">
+      <DependentUpon>ArvinTransportDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet4.xsc">
+      <DependentUpon>ArvinTransportDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArvinTransportDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArvinTransportDBDataSet4.xss">
+      <DependentUpon>ArvinTransportDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet5.xsc">
+      <DependentUpon>ArvinTransportDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArvinTransportDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArvinTransportDBDataSet5.xss">
+      <DependentUpon>ArvinTransportDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet61.xsc">
+      <DependentUpon>ArvinTransportDBDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet61.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArvinTransportDBDataSet61.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArvinTransportDBDataSet61.xss">
+      <DependentUpon>ArvinTransportDBDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet7.xsc">
+      <DependentUpon>ArvinTransportDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArvinTransportDBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArvinTransportDBDataSet7.xss">
+      <DependentUpon>ArvinTransportDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet81.xsc">
+      <DependentUpon>ArvinTransportDBDataSet81.xsd</DependentUpon>
+    </None>
+    <None Include="ArvinTransportDBDataSet81.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArvinTransportDBDataSet81.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArvinTransportDBDataSet81.xss">
+      <DependentUpon>ArvinTransportDBDataSet81.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\11.png" />
+    <Content Include="Images\car-rental %281%29.png" />
+    <Content Include="Images\customer-service-agent %282%29.png" />
+    <Content Include="Images\log-out %281%29.png" />
+    <Content Include="Images\monitor %281%29.png" />
+    <Content Include="Images\profile %281%29.png" />
+    <Content Include="Images\return %281%29.png" />
+    <Content Include="Images\sedan %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Photo\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
